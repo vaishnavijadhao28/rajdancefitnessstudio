@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+
+{% block title %}Our Services{% endblock %}
+
+{% block content %}
+<section class="services-section">
+  <div class="services-container">
+
+    <!-- Header -->
+    <div class="services-header">
+      <h2>Our Programs & Classes</h2>
+      <div class="services-divider"></div>
+      <p>
+        Discover our diverse range of dance fitness programs designed to suit
+        every age, skill level, and preference.
+      </p>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="services-grid">
+
+      <!-- Card -->
+      <div class="service-card" id="zumba">
+        <div class="service-image">
+          <img src="https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?auto=format&fit=crop&w=1080&q=80" alt="Zumba">
+          <span class="badge">Most Popular</span>
+          <span class="icon">🕺</span>
+        </div>
+        <div class="service-content">
+          <h3>Zumba</h3>
+          <p>High-energy dance fitness combining Latin and international music.</p>
+          <div class="service-meta">
+            <span>⏱ 45 mins</span>
+            <span>👥 All Levels</span>
+          </div>
+          <a href="/contact" class="btn primary service-btn">Book This Class</a>
+        </div>
+      </div>
+
+      <div class="service-card" id="bombay">
+        <div class="service-image">
+          <img src="static/images/bombay.jpeg" alt="Bombay Jam">
+          <span class="badge">Cultural</span>
+          <span class="icon">💃</span>
+        </div>
+        <div class="service-content">
+          <h3>Bombay Jam</h3>
+          <p>Bollywood-inspired dance fitness with Indian styles.</p>
+          <div class="service-meta">
+            <span>⏱ 50 mins</span>
+            <span>👥 Beginner–Advanced</span>
+          </div>
+          <a href="/contact" class="btn primary service-btn">Book This Class</a>
+        </div>
+      </div>
+
+      <div class="service-card" id="garba">
+        <div class="service-image">
+          <img src="static/images/garba.jpeg" alt="PowerGarba">
+          <span class="badge">Traditional</span>
+          <span class="icon">🧘</span>
+        </div>
+        <div class="service-content">
+          <h3>PowerGarba</h3>
+          <p>Traditional Garba transformed into a fitness workout.</p>
+          <div class="service-meta">
+            <span>⏱ 40 mins</span>
+            <span>👥 All Levels</span>
+          </div>
+          <a href="/contact" class="btn primary service-btn">Book This Class</a>
+        </div>
+      </div>
+
+      <div class="service-card" id="aerobics">
+        <div class="service-image">
+          <img src="static/images/aerobics.jpeg" alt="Aerobics">
+          <span class="badge">Cardio</span>
+          <span class="icon">💥</span>
+        </div>
+        <div class="service-content">
+          <h3>Aerobics</h3>
+          <p>Classic aerobic exercises for cardio and endurance.</p>
+          <div class="service-meta">
+            <span>⏱ 45 mins</span>
+            <span>👥 Intermediate</span>
+          </div>
+          <a href="/contact" class="btn primary service-btn">Book This Class</a>
+        </div>
+      </div>
+
+      <div class="service-card" id="bollywood">
+        <div class="service-image">
+          <img src="static/images/bollywood.jpeg" alt="Bollywood Fitness">
+          <span class="badge">Fun</span>
+          <span class="icon">👯‍♀️</span>
+        </div>
+        <div class="service-content">
+          <h3>Bollywood Fitness</h3>
+          <p>Energetic Bollywood choreography and music.</p>
+          <div class="service-meta">
+            <span>⏱ 50 mins</span>
+            <span>👥 All Levels</span>
+          </div>
+          <a href="/contact" class="btn primary service-btn">Book This Class</a>
+        </div>
+      </div>
+
+      <div class="service-card" id="kids">
+        <div class="service-image">
+          <img src="static/images/kid.jpeg" alt="Kids Dance">
+          <span class="badge">Kids</span>
+          <span class="icon">🧒</span>
+        </div>
+        <div class="service-content">
+          <h3>Kids Dance Fitness</h3>
+          <p>Fun and engaging dance sessions for kids.</p>
+          <div class="service-meta">
+            <span>⏱ 30 mins</span>
+            <span>👥 Kids Only</span>
+          </div>
+          <a href="/contact" class="btn primary service-btn">Book This Class</a>
+        </div>
+      </div>
+
+      <div class="service-card" id="wedding">
+        <div class="service-image">
+          <img src="static/images/wedding.jpeg" alt="Wedding Dance">
+          <span class="badge">Special</span>
+          <span class="icon">🎉</span>
+        </div>
+        <div class="service-content">
+          <h3>Wedding Choreography</h3>
+          <p>Personalized dance choreography for weddings.</p>
+          <div class="service-meta">
+            <span>⏱ Custom</span>
+            <span>👥 All Levels</span>
+          </div>
+          <a href="/contact" class="btn primary service-btn">Book This Class</a>
+        </div>
+      </div>
+
+      <div class="service-card" id="yoga">
+        <div class="service-image">
+          <img src="static/images/yoga.jpeg" alt="Yoga">
+          <span class="badge">Mindful</span>
+          <span class="icon">🧘</span>
+        </div>
+        <div class="service-content">
+          <h3>Yoga</h3>
+          <p>Yoga for flexibility, strength, and mental wellness.</p>
+          <div class="service-meta">
+            <span>⏱ 60 mins</span>
+            <span>👥 All Levels</span>
+          </div>
+          <a href="/contact" class="btn primary service-btn">Book This Class</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="services-cta">
+      <a href="/contact" class="btn outline">View Full Schedule</a>
+    </div>
+
+  </div>
+</section>
+{% endblock %}

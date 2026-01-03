@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Dance Fitness Studio{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+<header class="site-header">
+  <div class="header-container">
+
+    <!-- Logo -->
+    <div class="logo">
+      <img src="{{ url_for('static', filename='images/rdfs_logo(1).png') }}" alt="RDFS Logo">
+      <span class="tagline">Fitness That Feels Like Fun.</span>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-links">
+        <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/services">Programs</a>
+  <a href="/instructors">Instructors</a>
+  <a href="/gallery">Gallery</a>
+  <a href="/contact">Contact</a>
+    </nav>
+
+    <!-- Buttons -->
+    <div class="header-actions">
+     <a href="tel:+918275068637" class="btn btn-contact">📞 Call Now</a>
+      <a href="/contact" class="btn btn-primary">Book Trial</a>
+
+      <!-- Mobile Menu Button -->
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </div>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu">
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/services">Programs</a>
+  <a href="/instructors">Instructors</a>
+  <a href="/gallery">Gallery</a>
+  <a href="/contact">Contact</a>
+</div>
+</header>
+
+{% block content %}{% endblock %}
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Brand -->
+    <div class="footer-brand">
+     <div class="brand-title">
+  <div class="logo">
+    <img src="{{ url_for('static', filename='images/rdfs_logo(1).png') }}" alt="Raj Dance Fitness Studio Logo">
+  </div>
+
+  <div class="brand-text">
+    <h3>Raj Dance Fitness Studio</h3>
+    <p class="tagline">Dance. Sweat. Smile. Repeat.</p>
+  </div>
+</div>
+
+
+      <p class="brand-desc">
+        Transform your fitness journey through the joy of dance at Raj Dance Fitness Studio. Join our community of 500+ happy students and experience fun, energetic dance fitness programs for all ages.
+
+      </p>
+
+      <div class="social-links">
+        <a href="https://www.instagram.com/zin_vijayalaxmiy_._?igsh=cWVzOGpybjIzdXY5" target="_blank" rel="noopener" class="social-btn">
+  @zin_vijayalaxmi
+</a>
+
+        <a href="https://www.instagram.com/zin_sweet_poison_monii?igsh=enZweThvYWV6bW42" target="_blank" rel="noopener" class="social-btn">
+  @sweet_poison_monii
+</a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/services">Programs</a></li>
+        <li><a href="/instructors">Instructors</a></li>
+        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Programs -->
+    <div>
+      <h4>Our Programs</h4>
+      <ul>
+        <li><a href="/services#zumba">🕺 Zumba</a></li>
+
+        <li><a href="/services#bombay">💃 Bombay Jam</a></li>
+
+        <li><a href="/services#garba">🧘 PowerGarba</a></li>
+
+        <li><a href="/services#aerobics">💥 Aerobics</a></li>
+
+        <li><a href="/services#bollywood">👯‍♀️ Bollywood Fitness</a></li>
+
+        <li><a href="/services#kids">🧒 Kids Dance Fitness</a></li>
+
+        <li><a href="/services#wedding">🎉 Wedding Choreography</a></li>
+
+        <li><a href="/services#yoga">🧘 Yoga</a></li>
+
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h4>Contact Info</h4>
+      <p>📍 Raj Dance Fitness Studio,Dhanvantari Nagar ,Aove HDFC Bank Dastur Nagar<br>Amravati, Maharashtra 444601</p>
+      <p>📞 <a href="tel:+918275068637">+918275068637</a></p>
+      <p>📞 <a href="tel:+918554841419">+918554841419</a></p>
+      <p>✉<a href="mailto:rdfs2026@gmail.com"> rdfs2026@gmail.com</a></p>
+
+      <div class="footer-social-icons">
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/rdfs.2014?igsh=dWY5ZnQ1bDgxNjBs"
+     target="_blank" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" width="22" height="22">
+      <path fill="currentColor"
+        d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 3.5a5.5 5.5 0 1 1 0 11a5.5 5.5 0 0 1 0-11zm0 2a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7zm5.75-.9a1.25 1.25 0 1 1 0 2.5a1.25 1.25 0 0 1 0-2.5z"/>
+    </svg>
+  </a>
+
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/share/17tarfZPRn/"
+     target="_blank" aria-label="Facebook">
+    <svg viewBox="0 0 24 24" width="22" height="22">
+      <path fill="currentColor"
+        d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.5c0-2.4 1.4-3.7 3.6-3.7c1 0 2 .2 2 .2v2.2h-1.1c-1.1 0-1.5.7-1.5 1.4V12H16l-.4 3h-2.1v7A10 10 0 0 0 22 12z"/>
+    </svg>
+  </a>
+</div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p class="copyright">
+  © {{ year }} Raj Dance Fitness Studio. All rights reserved.
+</p>
+   <div class="footer-links">
+  <a href="/privacy-policy">Privacy Policy</a>
+  <span>|</span>
+  <a href="/terms-of-service">Terms of Service</a>
+</div>
+  </div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>

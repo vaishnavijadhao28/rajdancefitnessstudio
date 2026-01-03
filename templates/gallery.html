@@ -1,0 +1,215 @@
+{% extends "base.html" %}
+
+{% block title %}Gallery{% endblock %}
+
+{% block content %}
+<section class="gallery-section">
+  <div class="gallery-container">
+
+    <!-- Header -->
+    <div class="gallery-header">
+      <h2>Gallery & Highlights</h2>
+      <div class="gallery-divider"></div>
+      <p>
+        Experience the energy, joy, and community spirit that defines our dance
+        fitness studio through our photo and video gallery.
+      </p>
+    </div>
+
+    <!-- Stats -->
+    <div class="gallery-stats">
+      <div class="stat-box">
+        <div class="stat-icon">👥</div>
+        <h3 class="counter" data-target="500">0</h3>
+        <p>Students Trained</p>
+      </div>
+      <div class="stat-box">
+        <div class="stat-icon">🖼️</div>
+        <h3 class="counter" data-target="100">0</h3>
+          <p>Events Covered</p>
+      </div>
+      <div class="stat-box">
+        <div class="stat-icon">▶️</div>
+        <h3 class="counter" data-target="50">0</h3>
+        <p>Video Tutorials</p>
+      </div>
+      <div class="stat-box">
+        <div class="stat-icon">❤️</div>
+        <h3 class="counter" data-target="3">0</h3>
+        <p>Years of Joy</p>
+      </div>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid">
+
+  <div class="gallery-card">
+    <img src="static/images/group-fitness.jpg" alt="Group Fitness Class">
+    <div class="gallery-overlay">
+      <span class="category">Classes</span>
+      <h3>Group Fitness Classes</h3>
+    </div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="static/images/zumba-energy.jpg" alt="Zumba Class">
+    <div class="gallery-overlay">
+      <span class="category">Zumba</span>
+      <h3>High-Energy Zumba Session</h3>
+    </div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="static/images/bollywood_performance.jpg" alt="Bollywood Dance Performance">
+    <div class="gallery-overlay">
+      <span class="category">Bollywood</span>
+      <h3>Bollywood Dance Performance</h3>
+    </div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="static/images/studio.jpg" alt="Studio Workout">
+    <div class="gallery-overlay">
+      <span class="category">Studio</span>
+      <h3>Studio Workout Session</h3>
+    </div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="static/images/dance_fitness.jpg" alt="Dance Fitness Class">
+    <div class="gallery-overlay">
+      <span class="category">Dance Fitness</span>
+      <h3>Dance Fitness Fun</h3>
+    </div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="static/images/high-energy-session.jpg" alt="Zumba Workout">
+    <div class="gallery-overlay">
+      <span class="category">Zumba</span>
+      <h3>High-Energy Zumba Workout</h3>
+    </div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="static/images/yoga.jpeg" alt="Yoga Session">
+    <div class="gallery-overlay">
+      <span class="category">Yoga</span>
+      <h3>Peaceful Yoga Session</h3>
+    </div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="static/images/kid.jpeg" alt="Kids Dance Class">
+    <div class="gallery-overlay">
+      <span class="category">Kids</span>
+      <h3>Kids Dance Fitness Class</h3>
+    </div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="static/images/aerobics.jpeg" alt="Aerobics Workout">
+    <div class="gallery-overlay">
+      <span class="category">Aerobics</span>
+      <h3>Aerobics Cardio Workout</h3>
+    </div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="static/images/wedding.jpeg" alt="Wedding Choreography">
+    <div class="gallery-overlay">
+      <span class="category">Wedding</span>
+      <h3>Wedding Dance Choreography</h3>
+    </div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="static/images/bombay.jpeg" alt="Bombay Jam Dance">
+    <div class="gallery-overlay">
+      <span class="category">Bombay Jam</span>
+      <h3>Bombay Jam Dance Fitness</h3>
+    </div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="static/images/garba.jpeg" alt="Power Garba">
+    <div class="gallery-overlay">
+      <span class="category">Garba</span>
+      <h3>Power Garba Fitness Session</h3>
+    </div>
+  </div>
+
+        <!-- Video -->
+  <div class="gallery-card video">
+    <video muted autoplay loop playsinline preload="metadata">
+      <source src="static/videos/1.mp4" type="video/mp4">
+    </video>
+    <div class="gallery-overlay">
+      <span class="category">Zumba</span>
+      <h3>Zumba Jumping Session</h3>
+    </div>
+<!--    <span class="play-icon">▶</span>-->
+  </div>
+
+
+  <div class="gallery-card video">
+    <video muted autoplay loop playsinline preload="metadata">
+      <source src="static/videos/3.mp4" type="video/mp4">
+    </video>
+    <div class="gallery-overlay">
+      <span class="category">Dance</span>
+      <h3>Choreography Session</h3>
+    </div>
+<!--    <span class="play-icon">▶</span>-->
+  </div>
+
+
+  <div class="gallery-card video">
+    <video muted autoplay loop playsinline preload="metadata">
+      <source src="static/videos/2.mp4" type="video/mp4">
+    </video>
+    <div class="gallery-overlay">
+      <span class="category">Fitness</span>
+      <h3>Group Fitness Session</h3>
+    </div>
+<!--    <span class="play-icon">▶</span>-->
+  </div>
+
+
+  <div class="gallery-card video">
+    <video muted autoplay loop playsinline preload="metadata">
+      <source src="static/videos/4.mp4" type="video/mp4">
+    </video>
+    <div class="gallery-overlay">
+      <span class="category">Video</span>
+      <h3>Bollywood Dance</h3>
+    </div>
+<!--    <span class="play-icon">▶</span>-->
+  </div>
+
+        <div id="lightbox" class="lightbox">
+  <span class="close">×</span>
+  <img id="lightbox-img">
+  <video id="lightbox-video" controls></video>
+</div>
+    </div>
+
+    <!-- CTA -->
+    <div class="gallery-cta">
+  <h3>Professional Photography & Videography</h3>
+  <p>
+    Our instructor MohNish Misal is a professional photographer and videographer,
+      specializing in capturing high-quality fitness sessions, dance performances,
+      and special event moments with creativity and precision.
+  </p>
+
+  <a href="https://wa.me/918275068637?text=Hi%20I%20want%20to%20book%20a%20photography%20session"
+     class="btn primary">
+     Book Photography Session
+  </a>
+</div>
+
+
+  </div>
+</section>
+{% endblock %}

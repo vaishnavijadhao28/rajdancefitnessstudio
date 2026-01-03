@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+
+{% block title %}Our Instructors{% endblock %}
+
+{% block content %}
+<!-- INSTRUCTORS SECTION -->
+<section id="instructors" class="instructors-section">
+  <div class="instructors-container">
+
+    <!-- Header -->
+    <div class="instructors-header">
+      <h2>Meet Our Certified Dance & Fitness Instructors</h2>
+      <div class="instructors-divider"></div>
+      <p>
+        Learn from certified professionals who bring passion, awards,
+        and experience to every class.
+      </p>
+    </div>
+
+    <!-- Grid -->
+    <div class="instructors-grid">
+
+      <!-- Instructor 1 -->
+      <div class="instructor-card">
+        <div class="instructor-image">
+          <img src="{{ url_for('static', filename='images/vijaylaxmi.jpg') }}" alt="Vijayalaxmi Yadav">
+          <span class="instructor-badge lime">Gold Medalist</span>
+        </div>
+
+        <div class="instructor-content">
+          <h3>Vijayalaxmi Yadav</h3>
+          <p class="handle">@zin_vijayalaxmiy_._</p>
+
+          <div class="tags">
+            <span>Zumba</span>
+            <span>Bombay Jam</span>
+            <span>PowerGarba</span>
+            <span>Aerobics</span>
+          </div>
+
+          <ul class="achievements">
+  <li>🏆 Certified Fitness Instructor</li>
+  <li>🥇 Gold Medalist – Yoga</li>
+  <li>👑 Miss India Fitness 2022</li>
+</ul>
+
+          <a href="https://www.instagram.com/zin_vijayalaxmiy_._?igsh=cWVzOGpybjIzdXY5" class="instructor-btn">View Instructor Profile</a>
+        </div>
+      </div>
+
+      <!-- Instructor 2 -->
+      <div class="instructor-card">
+        <div class="instructor-image">
+          <img src="{{ url_for('static', filename='images/misal.jpg') }}" alt="MohNish Misal">
+          <span class="instructor-badge green">Multi-Skilled</span>
+        </div>
+
+        <div class="instructor-content">
+          <h3> MohNish Misal</h3>
+          <p class="handle">@zin_sweet_poison_monii</p>
+
+          <div class="tags">
+            <span>Zumba</span>
+            <span>Yoga</span>
+              <span>Bombay Jam</span>
+            <span>Wedding Choreography</span>
+          </div>
+
+          <ul class="achievements">
+              <li>🏆Certified Fitness Instructor</li>
+            <li>💃 Bollywood Fitness Instructor</li>
+            <li>📸 Photographer & Videographer</li>
+          </ul>
+
+          <a href="https://www.instagram.com/zin_sweet_poison_monii?igsh=enZweThvYWV6bW42" class="instructor-btn">View Instructor Profile</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="instructor-philosophy">
+  <h3>Our Teaching Philosophy</h3>
+  <p>
+    At Raj Dance Fitness Studio, our instructors believe fitness should be
+    enjoyable, inclusive, and result-driven. Every class is designed to
+    motivate beginners while challenging advanced learners.
+  </p>
+
+  <p>
+    Our trainers focus on correct form, energy, and personal attention so
+    every student feels confident, safe, and inspired.
+  </p>
+</section>
+
+<section class="instructor-stats">
+  <div class="stat">
+    <h4>8+</h4>
+    <p>Years of Teaching Experience</p>
+  </div>
+  <div class="stat">
+    <h4>500+</h4>
+    <p>Happy Students Trained</p>
+  </div>
+  <div class="stat">
+    <h4>8+</h4>
+    <p>Dance & Fitness Programs</p>
+  </div>
+  <div class="stat">
+    <h4>100%</h4>
+    <p>Certified Trainers</p>
+  </div>
+</section>
+<section class="instructor-specialties">
+  <h3>What Our Instructors Specialize In</h3>
+
+  <ul>
+    <li>✔ Weight Loss & Fat Burn Dance Programs</li>
+    <li>✔ Beginner-Friendly Zumba & Aerobics</li>
+    <li>✔ Wedding & Event Choreography</li>
+    <li>✔ Kids Dance & Fitness Training</li>
+    <li>✔ Strength, Flexibility & Yoga Sessions</li>
+  </ul>
+</section>
+
+<section class="instructor-testimonials">
+  <h3>What Students Say About Our Instructors</h3>
+
+  <div class="testimonial">
+    <p>
+      “The instructors are extremely motivating and supportive. I never felt
+      judged and saw results within weeks.”
+    </p>
+    <span>— Priya S., Zumba Student</span>
+  </div>
+
+  <div class="testimonial">
+    <p>
+      “Their energy and personal attention make every class enjoyable.
+      Best fitness decision I’ve made.”
+    </p>
+    <span>— Rahul M., Fitness Member</span>
+  </div>
+</section>
+
+<section class="instructor-cta">
+  <h3>Train With Our Expert Instructors</h3>
+  <p>
+    Join a community where fitness feels fun and results feel real.
+    Book your free trial today.
+  </p>
+
+  <a href="/contact" class="btn primary">Book Your Free Trial</a>
+</section>
+
+
+
+
+
+
+
+{% endblock %}

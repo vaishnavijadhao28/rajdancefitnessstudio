@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<section class="contact-section">
+  <div class="contact-container">
+
+    <!-- Heading -->
+    <div class="contact-header">
+      <h2>Get In Touch</h2>
+      <div class="contact-divider"></div>
+      <p>
+        Ready to start your dance fitness journey? Contact us today to book your
+        free trial class or learn more about our programs.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Visit Our Studio</h3>
+
+        <div class="info-item">
+          <span>📍</span>
+          <div>
+            <strong>Studio Address</strong>
+            <p>
+             Raj Dance Fitness Studio,Dhanvantari Nagar ,Above HDFC Bank Dastur Nagar Road, Amravati, Maharashtra-444601
+            </p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span>📞</span>
+          <div>
+            <strong>Contact Number</strong>
+            <p> <a href="tel:+918275068637">+918275068637</a></p>
+              <p><a href="tel:+918554841419">+918554841419</a></p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span>✉️</span>
+          <div>
+            <strong>Email Address</strong>
+            <p><a href="mailto:rdfs2026@gmail.com"> rdfs2026@gmail.com</a></p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span>⏰</span>
+          <div>
+            <strong>Studio Hours</strong>
+            <p>Mon – Sat:<br>7:00 AM to 10:00 AM<br>5:00 PM to 9:00 PM</p>
+          </div>
+        </div>
+          <a href="https://maps.app.goo.gl/bTHvBovhkryDtpjY9" class="info-cta">Get Directions</a>
+
+      </div>
+
+      <!-- Contact Form -->
+      <form class="contact-form" method="POST" action="/contact">
+        <h3>Book Your Free Trial</h3>
+<p class="form-subtitle">
+  No payment required • Certified instructors • Fun workouts
+</p>
+        <p class="form-note">
+          Fill out the form below and we’ll get back to you within 24 hours.
+        </p>
+
+        <div class="form-grid">
+          <input type="text" name="name" placeholder="Full Name *" required>
+          <input type="text" name="phone" placeholder="Phone Number *" required>
+        </div>
+
+        <input type="email" name="email" placeholder="Email Address *" required>
+
+        <select name="program">
+          <option value="">Select a Program</option>
+          <option>Zumba</option>
+          <option>Bombay Jam</option>
+          <option>PowerGarba</option>
+          <option>Aerobics</option>
+          <option>Bollywood Fitness</option>
+          <option>Kids Dance Fitness</option>
+          <option>Wedding Choreography</option>
+          <option>Yoga</option>
+        </select>
+
+        <textarea name="message" rows="4"
+          placeholder="Tell us about your fitness goals or questions..."></textarea>
+
+        <button type="submit" class="btn primary full">
+          Book Free Trial Class
+        </button>
+
+        <p class="privacy-text">
+  🔒 We respect your privacy. Your information is safe and will never be shared.
+</p>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>
+{% endblock %}

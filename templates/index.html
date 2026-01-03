@@ -1,0 +1,585 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<!-- ================= HERO SECTION ================= -->
+<section id="home" class="hero">
+  <!-- Background -->
+<div class="hero-bg">
+  <video autoplay muted loop playsinline>
+    <source src="{{ url_for('static', filename='videos/hero1.mp4') }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="overlay"></div>
+</div>
+
+
+  <!-- Content -->
+  <div class="hero-content">
+  <h1>
+    Best Dance & Fitness Studio in Amravati
+  </h1>
+      <h2 class="hero-subtitle">
+    Dance. Sweat. Smile. Repeat.
+  </h2>
+
+<p class="hero-desc">
+  Certified Zumba, Bombay Jam & Power Garba training designed
+  to help you stay fit, confident, and energized at every age.
+</p>
+
+    <div class="hero-buttons">
+      <a href="/contact" class="btn primary">Join a Free Trial</a>
+      <a href="/services" class="btn primary secondary-btn">View Programs</a>
+    </div>
+
+    <!-- Stats -->
+    <div class="hero-stats">
+  <div>
+    <h3 class="counter" data-target="500">0</h3>
+    <span>Happy Students</span>
+  </div>
+  <div>
+    <h3 class="counter" data-target="8">0</h3>
+    <span>Dance Programs</span>
+  </div>
+  <div>
+    <h3 class="counter" data-target="6">0</h3>
+    <span>Years Experience</span>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Floating Icons -->
+  <div class="float-icon left">🎵</div>
+  <div class="float-icon right">✨</div>
+</section>
+
+<!-- =================================================== -->
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about-section">
+  <div class="about-container">
+
+    <!-- Header -->
+    <div class="about-header">
+      <h2>About Raj Dance Fitness Studio</h2>
+      <div class="about-divider"></div>
+      <p>
+        At Raj Dance Fitness Studio, we combine rhythm, energy, and movement
+        to help you achieve your fitness goals with fun.
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="about-cards">
+
+      <div class="about-card">
+        <div class="icon-circle green">❤️</div>
+        <h3>Passionate Training</h3>
+        <p>Energetic and joyful fitness sessions.</p>
+      </div>
+
+      <div class="about-card">
+        <div class="icon-circle green-light">👥</div>
+        <h3>All Ages Welcome</h3>
+        <p>Kids, adults, and families.</p>
+      </div>
+
+      <div class="about-card">
+        <div class="icon-circle green">🏆</div>
+        <h3>Award Winning</h3>
+        <p>Certified professional instructors.</p>
+      </div>
+
+      <div class="about-card">
+        <div class="icon-circle green-light">😊</div>
+        <h3>Fun & Joy</h3>
+        <p>Fitness that feels like celebration.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= SERVICES ================= -->
+<section class="services-section" id="programs">
+  <div class="services-container">
+
+    <!-- Header -->
+    <div class="services-header">
+      <h2>Our Programs & Classes</h2>
+      <div class="services-divider"></div>
+      <p>
+        Discover our diverse range of dance fitness programs designed to suit
+        every age, skill level, and fitness goal.
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="services-grid">
+
+      <article class="service-card">
+        <div class="service-image">
+          <img src="https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?auto=format&fit=crop&w=1080&q=80" alt="Zumba Dance Fitness Class">
+          <span class="badge">Most Popular</span>
+        </div>
+        <div class="service-content">
+          <h3>Zumba</h3>
+          <p>
+            High-energy dance fitness combining Latin and international music
+            with fun choreography.
+          </p>
+          <div class="service-meta">
+            <span>⏱ 45 mins</span>
+            <span>👥 All Levels</span>
+          </div>
+          <a href="/services#zumba" class="btn primary service-btn ">Book This Class</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-image">
+          <img src="static/images/bombay.jpeg" alt="Bombay Jam Dance Class">
+          <span class="badge">Cultural</span>
+        </div>
+        <div class="service-content">
+          <h3>Bombay Jam</h3>
+          <p>
+            Bollywood-inspired dance fitness blending traditional and modern
+            Indian styles.
+          </p>
+          <div class="service-meta">
+            <span>⏱ 50 mins</span>
+            <span>👥 Beginner–Advanced</span>
+          </div>
+          <a href="/services#bombay-jam" class="btn primary service-btn ">Book This Class</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-image">
+          <img src="static/images/garba.jpeg" alt="PowerGarba Fitness Class">
+          <span class="badge">Traditional</span>
+        </div>
+        <div class="service-content">
+          <h3>PowerGarba</h3>
+          <p>
+            Traditional Gujarati Garba transformed into a high-energy fitness
+            workout.
+          </p>
+          <div class="service-meta">
+            <span>⏱ 40 mins</span>
+            <span>👥 All Levels</span>
+          </div>
+          <a href="/services#powergarba" class="btn primary service-btn ">Book This Class</a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="services-cta">
+      <a href="/services" class="btn outline">View All Programs</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================= -->
+
+<!-- WHY CHOOSE US -->
+<section id="why-choose-us" class="why-choose">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>Why Choose Raj Dance Fitness Studio?</h2>
+      <div class="divider"></div>
+      <p>
+        We're more than just a dance studio – we're your fitness family,
+        committed to making your journey enjoyable and successful.
+      </p>
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <span class="icon">✔️</span>
+        <h3>Certified & Experienced Instructors</h3>
+        <p>Learn from award-winning, internationally certified dance fitness professionals.</p>
+      </div>
+
+      <div class="why-card">
+        <span class="icon">❤️</span>
+        <h3>Fun & Energetic Classes</h3>
+        <p>Every session is enjoyable, motivating, and full of positive energy.</p>
+      </div>
+
+      <div class="why-card">
+        <span class="icon">👥</span>
+        <h3>Personalized Training</h3>
+        <p>Individual attention and modifications to suit your fitness goals.</p>
+      </div>
+
+      <div class="why-card">
+        <span class="icon">📸</span>
+        <h3>Wedding Choreography Experts</h3>
+        <p>Specialized choreography for weddings and special events.</p>
+      </div>
+
+      <div class="why-card">
+        <span class="icon">👨‍👩‍👧</span>
+        <h3>Kids & Family Friendly</h3>
+        <p>Programs designed for all ages – fitness for the whole family.</p>
+      </div>
+
+      <div class="why-card">
+        <span class="icon">🏠</span>
+        <h3>Studio + Outdoor + Event Sessions</h3>
+        <p>Flexible sessions at studio, outdoor venues, and private events.</p>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="why-cta">
+         <div class="steps">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+  </div>
+      <h3>Join 500+ Happy Students!</h3>
+      <p>
+        “The best decision I made for my fitness journey.
+        The instructors are amazing, the community is supportive, and every class is an absolute joy!”
+      </p>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- INSTRUCTORS SECTION -->
+<section id="instructors" class="instructors-section">
+  <div class="instructors-container">
+
+    <!-- Header -->
+    <div class="instructors-header">
+      <h2>Meet Your Expert Instructors</h2>
+      <div class="instructors-divider"></div>
+      <p>
+        Learn from certified professionals who bring passion, awards,
+        and experience to every class.
+      </p>
+    </div>
+
+    <!-- Grid -->
+    <div class="instructors-grid">
+
+      <!-- Instructor 1 -->
+      <div class="instructor-card">
+        <div class="instructor-image">
+          <img src="{{ url_for('static', filename='images/vijaylaxmi.jpg') }}" alt="Vijayalaxmi Yadav">
+          <span class="instructor-badge lime">Gold Medalist</span>
+        </div>
+
+        <div class="instructor-content">
+          <h3>Vijayalaxmi Yadav</h3>
+          <p class="handle">@zin_vijayalaxmiy_._</p>
+
+          <div class="tags">
+            <span>Zumba</span>
+            <span>Bombay Jam</span>
+            <span>PowerGarba</span>
+            <span>Aerobics</span>
+          </div>
+
+          <ul class="achievements">
+  <li>🏆 Certified Fitness Instructor</li>
+  <li>🥇 Gold Medalist – Yoga</li>
+  <li>👑 Miss India Fitness 2022</li>
+</ul>
+
+          <a href="https://www.instagram.com/zin_vijayalaxmiy_._?igsh=cWVzOGpybjIzdXY5" class="instructor-btn">View Instructor Profile</a>
+        </div>
+      </div>
+
+      <!-- Instructor 2 -->
+      <div class="instructor-card">
+        <div class="instructor-image">
+          <img src="{{ url_for('static', filename='images/misal.jpg') }}" alt="MohNish Misal">
+          <span class="instructor-badge green">Multi-Skilled</span>
+        </div>
+
+        <div class="instructor-content">
+          <h3> MohNish Misal</h3>
+          <p class="handle">@zin_sweet_poison_monii</p>
+
+          <div class="tags">
+            <span>Zumba</span>
+            <span>Yoga</span>
+              <span>Bombay Jam</span>
+            <span>Wedding Choreography</span>
+          </div>
+
+          <ul class="achievements">
+              <li>🏆Certified Fitness Instructor</li>
+            <li>💃 Bollywood Fitness Instructor</li>
+            <li>📸 Photographer & Videographer</li>
+          </ul>
+
+          <a href="https://www.instagram.com/zin_sweet_poison_monii?igsh=enZweThvYWV6bW42" class="instructor-btn">View Instructor Profile</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonials-section">
+  <div class="testimonials-container">
+
+    <!-- Header -->
+    <div class="testimonials-header">
+      <h2>What Our Students Say</h2>
+      <div class="testimonials-divider"></div>
+      <p>
+        Don’t just take our word for it. Here’s what our amazing community of
+        dancers and fitness enthusiasts have to say.
+      </p>
+    </div>
+
+    <!-- Testimonials Grid -->
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card">
+        <div class="quote">❝</div>
+        <div class="user">
+          <div class="avatar">PS</div>
+          <div>
+            <h4>Priya Sharma</h4>
+            <span>Software Engineer</span>
+          </div>
+        </div>
+        <div class="stars">★★★★</div>
+        <p>
+          “Raj Dance Fitness Studio has changed my fitness journey – I now enjoy
+          every workout! The instructors are so energetic and supportive.”
+        </p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="quote">❝</div>
+        <div class="user">
+          <div class="avatar">AP</div>
+          <div>
+            <h4>Arjun Patel</h4>
+            <span>Business Owner</span>
+          </div>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p>
+          “The wedding choreography service was exceptional! Our entire family
+          learned beautiful dances for our wedding.”
+        </p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="quote">❝</div>
+        <div class="user">
+          <div class="avatar">SR</div>
+          <div>
+            <h4>Sneha Reddy</h4>
+            <span>Teacher</span>
+          </div>
+        </div>
+        <div class="stars">★★★</div>
+        <p>
+          “I’ve been attending Zumba classes for 6 months now. Lost 15kg and feel
+          amazing! The community here is so welcoming.”
+        </p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="quote">❝</div>
+        <div class="user">
+          <div class="avatar">RG</div>
+          <div>
+            <h4>Rahul Gupta</h4>
+            <span>Student</span>
+          </div>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p>
+          “PowerGarba classes are incredible! It’s like a party while working out.”
+        </p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="quote">❝</div>
+        <div class="user">
+          <div class="avatar">MJ</div>
+          <div>
+            <h4>Meera Joshi</h4>
+            <span>Homemaker</span>
+          </div>
+        </div>
+        <div class="stars">★★★★</div>
+        <p>
+          “My daughter loves the kids dance fitness classes. Great for the whole family!”
+        </p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="quote">❝</div>
+        <div class="user">
+          <div class="avatar">KK</div>
+          <div>
+            <h4>Kiran Kumar</h4>
+            <span>IT Professional</span>
+          </div>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p>
+          “Bombay Jam classes are pure joy! Best decision ever!”
+        </p>
+      </div>
+
+        <div class="testimonial-card">
+        <div class="quote">❝</div>
+        <div class="user">
+          <div class="avatar">AV</div>
+          <div>
+            <h4>Ankit Verma</h4>
+            <span>Marketing Executive</span>
+          </div>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p>
+          “Joining Raj Dance Fitness Studio was the best decision for my health. The Zumba sessions are energetic, well-structured, and never boring. I actually look forward to my workouts now.”
+        </p>
+      </div>
+
+        <div class="testimonial-card">
+        <div class="quote">❝</div>
+        <div class="user">
+          <div class="avatar">PK</div>
+          <div>
+            <h4>Pooja Kulkarni</h4>
+            <span>College Student</span>
+          </div>
+        </div>
+        <div class="stars">★★★★</div>
+        <p>
+          “I joined for dance but stayed for the positive environment. The instructors motivate everyone personally, and the classes feel fun rather than tiring. Highly recommended for beginners.”        </p>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="testimonials-cta">
+        <div class="cta-stars" aria-label="5 star rating">
+    ★ ★ ★ ★ ★
+  </div>
+      <h3>Join Our 5-Star Community!</h3>
+      <p>
+        Over 500+ students have transformed their fitness journey with us.
+        Experience the joy of dance fitness today.
+      </p>
+      <div class="cta-buttons">
+        <a href="/contact" class="btn primary">Start Free Trial</a>
+        <a href="/contact" class="btn outline">Read More Reviews</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================================================ -->
+
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery-section">
+  <div class="gallery-container">
+
+    <div class="gallery-header">
+      <h2>Gallery & Highlights</h2>
+      <div class="gallery-divider"></div>
+      <p>
+        Experience the joy, energy, and community of our studio.
+      </p>
+    </div>
+
+    <div class="gallery-grid">
+
+  <div class="gallery-card">
+    <img src="static/images/group-fitness.jpg" alt="Group Fitness">
+    <div class="gallery-overlay">
+      <span class="category">Classes</span>
+      <h3>Group Fitness</h3>
+    </div>
+  </div>
+
+  <div class="gallery-card">
+    <img src=" static/images/zumba-energy.jpg" alt="Zumba">
+    <div class="gallery-overlay">
+      <span class="category">Zumba</span>
+      <h3>Zumba Energy</h3>
+    </div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="static/images/bollywood_performance.jpg" alt="Bollywood">
+    <div class="gallery-overlay">
+      <span class="category">Bollywood</span>
+      <h3>Bollywood Performance</h3>
+    </div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="static/images/studio.jpg" alt="Studio">
+    <div class="gallery-overlay">
+      <span class="category">Studio</span>
+      <h3>Studio Workout</h3>
+    </div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="static/images/dance_fitness.jpg" alt="Dance Fitness">
+    <div class="gallery-overlay">
+      <span class="category">Classes</span>
+      <h3>Dance Fitness Fun</h3>
+    </div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="static/images/high-energy-session.jpg" alt="High Energy">
+    <div class="gallery-overlay">
+      <span class="category">Zumba</span>
+      <h3>High Energy Sessions</h3>
+    </div>
+  </div>
+
+</div>
+
+
+    <div class="gallery-cta">
+      <a href="/gallery" class="btn outline">View Full Gallery</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================= -->
+
+{% endblock %}
