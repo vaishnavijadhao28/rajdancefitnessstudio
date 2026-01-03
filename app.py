@@ -1,9 +1,10 @@
 from flask import Flask, render_template, request, redirect
-import urllib.parse
+import urllib.parse, os
 import smtplib
 from email.mime.text import MIMEText
 from datetime import datetime
 app = Flask(__name__)
+
 
 # ---------------- EMAIL CONFIG ----------------
 OWNER_EMAIL = "theycallmehimansh@gmail.com"          # CHANGE THIS
@@ -103,5 +104,9 @@ def terms_of_service():
         year=datetime.now().year
     )
 
+# if __name__ == "__main__":
+#     app.run(debug=True)
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
