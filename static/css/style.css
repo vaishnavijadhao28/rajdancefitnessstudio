@@ -238,13 +238,13 @@ html, body {
 
 /* Logo */
 .logo {
-  display: flex;
+  display: block;
   align-items: center;
   gap: 10px;
 }
 
 .logo img {
-  height: 90px;                 /* ✅ PERFECT SIZE */
+  height: 80px;                 /* ✅ PERFECT SIZE */
   width: auto;
   object-fit: contain;
 }
@@ -374,9 +374,23 @@ html, body {
   }
 
   .logo img {
-    height: 44px;
+    height: 70px;
   }
-
+.header-actions .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+}
+.header-container {
+    padding: 0 5px;
+}
   .site-header {
     height: 70px;
   }
