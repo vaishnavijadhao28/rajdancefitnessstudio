@@ -7,9 +7,9 @@ app = Flask(__name__)
 
 
 # ---------------- EMAIL CONFIG ----------------
-OWNER_EMAIL = "theycallmehimansh@gmail.com"          # CHANGE THIS
-SENDER_EMAIL = "digikeycentro@gmail.com"          # CHANGE THIS
-SENDER_PASSWORD = "axgg bbka alna lsoy"        # CHANGE THIS
+OWNER_EMAIL = "rdfs2026@gmail.com"          # CHANGE THIS
+SENDER_EMAIL = "honeyydb56@gmail.com"          # CHANGE THIS
+SENDER_PASSWORD = "Icec biwh vrhf onox"        # CHANGE THIS
 OWNER_WHATSAPP = "918275068637"                # CHANGE THIS
 
 
